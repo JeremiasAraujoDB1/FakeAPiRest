@@ -2,7 +2,7 @@ require "httparty"
 
 describe "GET /Authors" do
   it "Consulta da lista de Autores" do
-    #Envio de requisição ao Endpoint GET do /Authors e guardando o retorno na variável "response"
+    #Envio de requisição ao Endpoint GET do /Authors e guardando o retorno na variável "response".
     response = HTTParty.get(
       "http://fakerestapi.azurewebsites.net/api/v1/Authors",
       headers: {
